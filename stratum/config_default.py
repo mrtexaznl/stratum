@@ -20,7 +20,7 @@ LOGLEVEL = 'DEBUG'
 # How many threads use for synchronous methods (services).
 # 30 is enough for small installation, for real usage
 # it should be slightly more, say 100-300.
-THREAD_POOL_SIZE = 30
+THREAD_POOL_SIZE = 300
 
 # RPC call throws TimeoutServiceException once total time since request has been
 # placed (time to delivery to client + time for processing on the client)
@@ -99,8 +99,9 @@ BROWSER_ENABLE = True
 
 # Hostname and credentials for one trusted Bitcoin node ("Satoshi's client").
 # Stratum uses both P2P port (which is 8333 everytime) and RPC port
+# modified for MediterraneanCoin
 BITCOIN_TRUSTED_HOST = '127.0.0.1'
-BITCOIN_TRUSTED_PORT = 8332 # RPC port
+BITCOIN_TRUSTED_PORT = 9372 # MED RPC port
 BITCOIN_TRUSTED_USER = 'stratum'
 BITCOIN_TRUSTED_PASSWORD = '***somepassword***'
 
